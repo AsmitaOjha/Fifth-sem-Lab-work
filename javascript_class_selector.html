@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class selector</title>
+    <head>
+        <script>
+            function javascript_class_selector(){
+                var para = document.getElementsByClassName('test');
+                alert('Number of paragraphs selected is ' + para.length);
+                for (var i = 0; i <= 5; i++) {
+                    if (i !== 2) {
+                        alert(para[i].innerHTML);
+       
+                     }
+                }
+            }
+        </script>
+    </head>
+
+<body>
+    <h2>this is a heading</h2>
+    <p class="test"> ✨This is a pragraph one.</p>
+    <p class="test"> 😅This is a pragraph two.</p>
+    <p class="test">😯This is a pragraph three.</p>
+    <p class="test">🪄This is a pragraph four.</p>
+    <p class="test">🥱This is a pragraph five.</p>
+    <button onclick="javascript_class_selector()">Click me</button>
+</body>
+</html>

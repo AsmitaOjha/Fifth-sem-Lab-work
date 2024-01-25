@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Program</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    // Function to perform multiplication
+    function multiplyNumbers() {
+        // Get user input for two numbers
+        const num1 = prompt("Enter the first number:", "0");
+        const num2 = prompt("Enter the second number:", "0");
+
+        // Convert input to numbers and perform multiplication
+        const result = parseFloat(num1) * parseFloat(num2);
+
+        // Display the result using an alert popup
+        alert("The result of multiplication is: " + result);
+    }
+</script>
+
+<button onclick="multiplyNumbers()">Multiply Numbers</button>
+
+</body>
+</html>

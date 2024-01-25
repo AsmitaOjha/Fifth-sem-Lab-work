@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Description Change</title>
+    <style>
+        #imageContainer {
+            text-align: center;
+        }
+
+        #imageContainer img {
+            width: 300px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="imageContainer">
+        <img src="rabbit 11.jpg" alt="Image Description" id="mainImage" onmouseover="changeDescription()" onmouseout="resetDescription()">
+        <p id="description">Hello, this is an image of a rabbit studying for an exam</p>
+    </div>
+
+    <script>
+        function changeDescription() {
+            document.getElementById('description').innerHTML = 'Exams are on the head so searching in google shortcut method to complete syllabus in less time';
+        }
+
+        function resetDescription() {
+            document.getElementById('description').innerHTML = 'ohh hello, I am little bit busy and tensed because my exams are coming';
+        }
+    </script>
+
+</body>
+</html>

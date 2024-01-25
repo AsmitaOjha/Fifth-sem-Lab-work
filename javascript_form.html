@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and form element</title>
+</head>
+<body>
+     Enter your Name:
+     <input type="text" placeholder="enter your name" id="txtInputData">
+     <!-- form ko element input lai yahaa use gariyeko xh, jashma text data entry garnah milxh -->
+     <button onclick="displayName()">Click Me🥴</button>
+     <!-- yeshma euta button banaaiyo, ani tyo button ma bhitrah "click Me🥴" lekhiyo, teshpaxi tyo button 
+     lai click garne bittiai "displayName()" function call hune banaaiyo -->
+     <p id="show_name"></p>
+</body>
+<script>
+    function displayName(){
+        var originalName= document.getElementById('txtInputData').value;
+        // yeshma ke gariyo bhanda, first ma ek object banaaiyo jashko naam "originalName" rakhiyo ani teshpaxi, html document
+        // jashko id "txtInputData" xh teshko value lai, yo "originalName" naam ko object lai assign gariyo.
+        document.getElementById("show_name").innerHTML = 'Your name is: '+originalName;
+        //teshpaxi, yo sentence ma ke gariyo bhanda, html document ma jashko id "show_name" xh tesh bhitrah "Your name is:" plus 
+        //tyo aghi banne ko object ma bhaye ko value rakhiyo, yeshari yo dui kura milerah hamro function "displayName" ready bhayo.
+    }
+</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class work</title>
+</head>
+<body>
+    <h1>Your Detail</h1>
+    Name: <input type="text" value="Asmita Ojha" id="Your_Name"> <br>
+    <br>
+    Email: <input type="email" value="asmitaojha05@gmail.com" id="Your_email">
+    <button onclick="Check_data()">check</button>
+    <button onclick="change_data()">Change</button>
+    <p id="show_name"></p>
+    <p id="show_email"></p>
+   
+    <p id="change"></p>
+
+   
+   
+    <script>
+         function Check_data(){
+        var Name= document.getElementById('Your_Name').value;
+        var Email=document.getElementById('Your_email').value;
+        document.getElementById("show_name").innerHTML = 'Your name is: '+ Name;
+        document.getElementById('show_email').innerHTML = 'Your email is: ' + Email;
+         }
+         function change_data(){
+         
+         document.getElementById("change").innerHTML= "Are you sure want to change? ";
+         //hit and trial
+         var button = document.createElement("button");                   
+         button.setAttribute("type","button");         
+         button.textContent = "yes"; 
+         button.addEventListener("click", function() {
+        alert("Button clicked!");
+            });
+         var container = document.getElementbyId("button-container"); 
+         container.appendChild(Button);           
+   
+
+         }
+         function yes_no(){
+            document.getElementById("yes").innerHTML="b"
+         }
+    </script>
+    
+
+</body>
+</html>

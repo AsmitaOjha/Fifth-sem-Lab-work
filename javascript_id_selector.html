@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+        <script>
+            function javascript_id_selector(){
+                var para = document.getElementById("test");  
+                // para bhaneko object ho, jashlai test id bhayeko element assign gariya xh
+                alert('HTMl element selected is' + para); 
+                alert( 'displaying the html element content'+ para['innerHTML']);
+                alert('I am going to change the content of html element');
+                document.getElementById('test').innerHTML = 'New content of the element with id test';
+            }
+        </script>
+    </head>
+</head>
+<body>
+    <h2>This is a heading</h2>
+    <p>This is a paragraph</p>
+    <p id="test">This is another paragraph.</p>
+    <button onclick="javascript_id_selector()">Click me</button>
+  
+</body>
+</html>
